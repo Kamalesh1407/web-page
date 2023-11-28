@@ -1,0 +1,111 @@
+
+<html>
+
+<head>
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page in HTML</title>
+</head>
+<style>
+    body {
+        font-family: Arial;
+        background-image: url(https://i.cdn.newsbytesapp.com/images/l35520230504105432.jpeg);
+        background-size: 110% 110%;
+        background-size: cover;
+        width: 100%;
+        height: 20vh;
+}
+
+    h1 {
+        text-align: center;
+        color: red;
+        font-family:Playfair;
+    }
+
+    form {
+        width: 35rem;
+        margin: auto;
+        color: whitesmoke;
+    }
+   
+
+
+    input[type=text],
+    input[type=password] {
+        width: 100%;
+        margin: 10px 0;
+        border-radius: 5px;
+        padding: 15px 18px;
+        box-sizing: border-box;
+    }
+
+    button {
+        background-color: lightblue;
+        color: white;
+        padding: 14px 20px;
+        border-radius: 5px;
+        margin: 7px 0;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    button:hover {
+        opacity: 0.6;
+        cursor: pointer;
+    }
+    
+    .glow {
+        font-size: 50px;
+        color: #ffffff;
+        text-align: center;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+    }
+
+    @-webkit-keyframes glow {
+        from {
+            text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000,
+                0 0 50px #9554b3, 0 0 60px #9554b3, 0 0 70px #9554b3;
+        }
+
+        to {
+            text-shadow: 0 0 20px #eeeeee, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6,
+                0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+        }
+    }
+</style>
+
+<body>
+   
+   
+     <h1><b>LOGIN FORM</b> </h1>
+    <form action="login.php" method="post">
+        <div class="headingsContainer">
+            <h3 class="glow">Sign in</h3>
+        </div>
+        <div class="mainContainer">
+            <label for="username">
+                <h3>Your username</h3>
+            </label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+            <br><br>
+            <label for="pswrd">
+                <h3>Your password</h3>
+            </label>
+            <input type="password" placeholder="Enter Password" name="Password" required>
+            <div class="subcontainer">
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+                <p class="forgotpsd"> <a href="#">Forgot Password?</a></p>
+            </div>
+            <button type="submit"><a href="dbms1.html">Login</a></button>
+            <p class="register">Not a member? </p>
+        </div>
+    </form>
+</body>
+
+</html>
